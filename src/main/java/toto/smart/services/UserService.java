@@ -1,7 +1,7 @@
 package toto.smart.services;
 
-
 import org.springframework.stereotype.Service;
+import toto.smart.entities.Users;
 import toto.smart.repositories.JPA.UserInterfaceJPA;
 import toto.smart.repositories.UserInterface;
 
@@ -16,7 +16,13 @@ public class UserService implements UserInterface {
     }
 
     @Override
-    public void create() {
+    public void create(String name,String phoneNumber, String email, String password) {
+        Users user=null;
+        user.setName(name);
+        user.setPhoneNumber(phoneNumber);
+        user.setEmail(email);
+        user.setPassword(password);
+        userInterfaceJPA.save(user);
 
 
     }
