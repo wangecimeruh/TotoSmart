@@ -14,7 +14,7 @@ public class Users {
     private  int  id;
 
     @Column(name = "USER_NAME")
-    private  String  name;
+    private  String  userName;
 
     @Column(name = "EMAIL")
     private String email;
@@ -25,9 +25,13 @@ public class Users {
     @Column(name = "PASSWORD")
     private String password;
 
-    @Transient
-    @Column(name = "PASSWORD_REAPEAT")
-    private String passwordRepeat;
+    @Column(name = "ROLES")
+    private String roles;
+
+    @Column(name = "ACTIVE")
+    private Boolean active;
+
+
 
 
 }

@@ -18,14 +18,27 @@ public class UserController{
 
 
 @PostMapping("/create")
- public void create(String name,String phoneNumber, String email,String password){
-    userInterface.create(name,phoneNumber,email,password);
+ public void create(String userName,String phoneNumber, String email,String password){
+    userInterface.create(userName,phoneNumber,email,password);
 }
 
-@GetMapping("/trial")
+@GetMapping("/adminuser")
 public String out(){
 
     log.info("Hello Hello");
-    return "Heeeeyyyy over there";
+    return "<h1><b>Admin or User</b></h1>";
 }
+
+    @GetMapping("/admin")
+    public String admin(){
+
+        log.info("Hello Hello");
+        return "<h1>Admin</h1>";
+    }
+
+    @GetMapping("/user")
+    public String all(){
+    log.info("Hello Hello");
+        return "<h1><b>User</b></h1>";
+    }
 }

@@ -16,9 +16,9 @@ public class UserService implements UserInterface {
     }
 
     @Override
-    public void create(String name,String phoneNumber, String email, String password) {
+    public void create(String userName,String phoneNumber, String email, String password) {
         Users user=null;
-        user.setName(name);
+        user.setUserName(userName);
         user.setPhoneNumber(phoneNumber);
         user.setEmail(email);
         user.setPassword(password);
