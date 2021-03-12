@@ -1,4 +1,4 @@
-//package toto.smart.security;
+//package rest.API.security;
 //
 //import org.springframework.context.annotation.Bean;
 //import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;

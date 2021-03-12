@@ -1,13 +1,13 @@
-package toto.smart.services;
+package rest.API.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import toto.smart.entities.MyUserDetails;
-import toto.smart.entities.Users;
-import toto.smart.repositories.JPA.UserInterfaceJPA;
+import rest.API.entities.MyUserDetails;
+import rest.API.entities.Users;
+import rest.API.repositories.JPA.UserInterfaceJPA;
 
 import java.util.Optional;
 

@@ -1,9 +1,9 @@
-package toto.smart.services;
+package rest.API.services;
 
 import org.springframework.stereotype.Service;
-import toto.smart.entities.Users;
-import toto.smart.repositories.JPA.UserInterfaceJPA;
-import toto.smart.repositories.UserInterface;
+import rest.API.entities.Users;
+import rest.API.repositories.JPA.UserInterfaceJPA;
+import rest.API.repositories.UserInterface;
 
 @Service
 public class UserService implements UserInterface {

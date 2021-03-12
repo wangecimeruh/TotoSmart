@@ -1,4 +1,4 @@
-package toto.smart.entities;
+package rest.API.entities;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

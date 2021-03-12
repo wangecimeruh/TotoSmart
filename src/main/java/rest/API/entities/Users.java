@@ -1,4 +1,4 @@
-package toto.smart.entities;
+package rest.API.entities;
 import lombok.Data;
 import lombok.Generated;
 
